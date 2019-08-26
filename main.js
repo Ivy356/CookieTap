@@ -260,10 +260,12 @@ cookie_god = new Building("Cookie God", 450000000000, 250000000000000);
 
 setInterval(renew_cookies, 500);
 
-var upgrades = [
-  {active:false,cost:1000,costMulti:4,level:0,id:1}
-]
-
-function upgrades(){
-
+function improvedCursor(){
+  var improvedCursorCost = 100
+  if(cookies >= improvedCursorCost) {
+	cookies = cookies - improvedCursorCost;
+	improvedCursor = true;
+	localStorage.setItem("improvedCursor", true);
+	cursor = cursor * 2;
+   }
 }
