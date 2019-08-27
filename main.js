@@ -270,5 +270,5 @@ function improvedCursor(){
    }
 }
 
-var audio = new Audio('rock.mp3');
+var audio = new Audio('/assets/rock.mp3');
 audio.play();
