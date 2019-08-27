@@ -269,6 +269,3 @@ function improvedCursor(){
 	cursor = cursor * 2;
    }
 }
-
-var audio = new Audio('/assets/rock.mp3');
-audio.play();
